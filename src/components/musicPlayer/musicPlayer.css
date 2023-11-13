@@ -1,0 +1,151 @@
+.player {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.pf-flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.fx-1{
+    flex: 1.5;
+    justify-content: center;
+    gap: 2rem;
+}
+.fx-2{
+    flex: 1.5;
+    justify-content: center;
+    gap: 2rem;
+}
+.fx-3{
+    flex: 3;
+    flex-direction: column;
+}
+
+.ctr-ctl {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    gap: 3rem;
+}
+
+.ctr-ctl .control {
+    height: 50%;
+    border-radius: 20rem;
+    background-color: #fff;
+}
+
+#mx-at {
+    height: 100%;
+}
+
+#mx-pix {
+  height: 80%;
+  border-radius: 1.5rem;
+  aspect-ratio: 0.7;
+}
+
+.icn {
+    height: 25%;
+}
+
+.icn-bg {
+    background-color: #fff;
+    height: 2rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+#progress{
+    width: 80%;
+    height: .5rem;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 1.5rem;
+}
+
+#progress-bar {
+    width: 65%;
+    height: 100%;
+    background-color: rgb(196, 104, 54);
+}
+
+.vol {
+    display: flex;
+    gap: .5rem;
+    height: 100%;
+    /* border: 2px solid red; */
+    align-items: center;
+}
+
+#vol-bar {
+    width: 5rem;
+    height: .4rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+}
+
+#vol-prgs {
+    width: 45%;
+    height: 100%;
+    background-color: rgb(196, 104, 54);
+}
+
+@media (max-width: 999px) {
+    .player {
+        justify-content: space-evenly;
+    }
+    .ctr-ctl {
+        gap: 2rem;
+    }
+    .fx-1,
+    .fx-2 {
+        gap: 10%;
+    }
+    .fx-3{
+        flex: 4;
+    }
+    .icn {
+        height: 17%;
+    }
+    .icn-bg {
+        height: 1.5rem;
+        padding: .3rem;
+        border-radius: .5rem;
+    }
+    #mx-at {
+        justify-content: space-evenly;
+        padding-left: 1rem;
+    }
+    #mx-pix {
+        width: 30%;
+        min-width: 4rem;
+    }
+    .vol {
+        padding-right: 2.5rem;
+    }
+}
+
+@media (max-width: 620px) {
+    /* #mx-at {
+        display: none;
+    } */
+    .fx-1 {
+        display: none;
+    }
+    .fx-2 {
+        display: none;
+    }
+    .ctr-ctl {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .ctr-ctl {
+        gap: 2rem;
+    }
+}
